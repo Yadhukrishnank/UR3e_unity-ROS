@@ -1,6 +1,6 @@
 # Description
 
-This is the ROS side repository that allows you to operate a ur3e robot with robotiq gripper 2f-85. Make sure the ROS work space is set up before running unity.
+This is the ROS side repository that allows you to operate a UR3e robot with robotiq gripper 2f-85. Make sure the ROS work space is set up before running unity.
 
 ------
 
@@ -12,21 +12,17 @@ The _git clone_ command allows you to download files from a remote server to you
 
 ### 2. Install Docker and VS Code
 
-Install docker and VS Code on your local computer
+Install docker and VS Code on your local computer.
+The installation of docker should complete correctly.
 
-    The installation of docker should complete correctly.
+### 3. Open the work_space in VS Code 
 
-### 3. Open the work space in VS Code 
-
-Navigate to ROS folder
+Navigate to ROS folder and open the work_space in VS Code.
 
     cd UR3e_unity/ROS/
+    code .
      
-Open the work_space in VS Code
-
-    ~/UR3e_unity/ROS$ code .
-
-### 4. Build the work_pace
+### 4. Build the work_space
 
 Open a remote window from the bottom left corner and Select "Reopen in container". The docker image will start to build.
     
@@ -44,4 +40,5 @@ To run the pick and place nodes run the following command
 
     rosrun ur_robotiq mover.py
 ------
+Ros side is setup is finished 
  
