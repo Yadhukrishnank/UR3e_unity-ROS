@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="robotiq_85_gripper" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Ensure this line is correctly commented or enabled if necessary -->
+    <!-- <xacro:include filename="$(find ur_e_description)/urdf/ur3e_robot.urdf.xacro" /> -->
+
+    <!-- Corrected include tag -->
+    <!-- <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85_model.xacro" /> -->
+
+    <!-- <joint name="measurement_tool_joint" type="fixed"> -->
+    <!-- The parent link must be read from the robot model it is attached to. -->
+    <!-- <parent link="tool0"/>
+    <child link="robotiq_arg2f_base_link"/>
+    The tool is directly attached to the flange.
+    <origin rpy="0 0 1.57" xyz="0 0 0"/>
+    </joint> -->
+
+
+    <!-- Gripper inclusion -->
+    <!-- <xacro:robotiq_arg2f_85 prefix="" connected_to="tool0"/>
+        <origin xyz="0 0 0" rpy="0 -1.57 0" />
+    </xacro:robotiq_arg2f_85> -->
+
+   <xacro:include filename="$(find robotiq_gripper)/urdf/robotiq_85_gripper.urdf.xacro" />
+
+    <xacro:robotiq_85_gripper prefix="" parent="tool0">
+        <origin xyz="0 0 0" rpy="0 -1.57 0" />
+    </xacro:robotiq_85_gripper>
+</robot>

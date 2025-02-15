@@ -1,0 +1,24 @@
+{
+    "name": "noetic desktop-full",
+    "dockerFile": "Dockerfile",
+    "runArgs": [
+        "--privileged",
+        "--network=host",
+        "--env=DISPLAY",
+        "--env=QT_X11_NO_MITSHM=1",
+        "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+        "--volume=${env:HOME}/.Xauthority:/home/vscode/.Xauthority:rw"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+    "workspaceFolder": "/${localWorkspaceFolderBasename}",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+    ],
+    "containerEnv": {
+        "DISPLAY": ":0",
+        "QT_X11_NO_MITSHM": "1",
+        "XAUTHORITY": "/home/vscode/.Xauthority"
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "sudo chown vscode:vscode /home/vscode/.Xauthority"
+}

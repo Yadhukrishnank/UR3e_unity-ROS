@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur_robotiq
+    relative_path: URDF/ur3e_gripper.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ur3e.srdf
+  CONFIG:
+    author_name: yadhu
+    author_email: yadhunandan97@gmail.com
+    generated_timestamp: 1737835062
