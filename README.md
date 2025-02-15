@@ -1,5 +1,6 @@
 # Description
-This repository allows you to operate a ur3e robot with robotiq gripper 2f-85 in unity environment with ROS
+
+This is the ros side repository that allows you to operate a ur3e robot with robotiq gripper 2f-85. Make sure the ROS work space is set up before running unity.
 
 ------
 
@@ -13,37 +14,24 @@ The _git clone_ command allows you to download files from a remote server to you
 
 Install docker and VS Code on your local computer
 
-    
-The installation of docker should complete correctly.
+    The installation of docker should complete correctly.
 
 ### 3. Open the work space in VS Code 
 
 Navigate to ROS folder
 
-
     cd UR3e_unity/ROS/
- 
-    
-Open the workspace in VS Code
-
+     
+Open the work_space in VS Code
 
     ~/UR3e_unity/ROS$ code .
 
+### 4. Build the work_pace
 
-### 4. Run Docker
-
-To execute the docker container use command:
-
-    sudo ./run_docker.sh
+Open a remote window from the bottom left corner and Select "Reopen in container". The docker image will start to build.
     
-If you need additional terminal inside of the Docker open new window in the terminal (Ctrl+Shift+T) and use command
+### 5. Open a new Terminal and enter the following commands
 
-    sudo ./into_docker.sh
-    
-### 5. Enter the following commands in the terminal 
-
-
-    cd turtlebot3_ws
     catkin_make
     source devel/setup.bash
     
@@ -55,3 +43,5 @@ Open an another terminal
 To run the pick and place nodes run the following command
 
     rosrun ur_robotiq mover.py
+------
+ 
