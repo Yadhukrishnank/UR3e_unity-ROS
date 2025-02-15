@@ -24,6 +24,10 @@ Navigate to ROS folder and open the work_space in VS Code.
      
 ### 4. Build the work_space
 
+Allow X11 Access on Host:
+
+    xhost +local:root
+
 Open a remote window from the bottom left corner and Select "Reopen in container". The docker image will start to build.
     
 ### 5. Open a new Terminal and enter the following commands
