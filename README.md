@@ -1,41 +1,34 @@
 # Description
-This repository allows you to operate a ur3e robot with robotiq gripper 2f-85 in unity environment
+This repository allows you to operate a ur3e robot with robotiq gripper 2f-85 in unity environment with ROS
 
 ------
 
-### 1. Download the repository from an organization
+### 1. Download this repository
 
 The _git clone_ command allows you to download files from a remote server to your local computer. Therefore, the _git clone_ command is specified first, followed by a link to the remote repository.
 
-    git clone git@github.com:THD-autonomous-system/ros-2023-thd.git
+    git clone https://github.com/Yadhukrishnank/UR3e_unity.git    
 
-### 2. Install Docker
+### 2. Install Docker and VS Code
 
-You need to go into the downloaded folder and go into the docker folder.
-
-
-    cd ros-2023-thd/docker
-
-If you don't have an Nvidia graphics card, run the command:
-
-    ./install_docker.bash
+Install docker and VS Code on your local computer
 
     
-The installation of docker should complete correctly. If docker does not install, it is most likely an error in your utility (apt) settings for downloading and updating from remote repositories. This is a problem you should solve on your own.
-------
+The installation of docker should complete correctly.
 
-### 3. Building Docker
+### 3. Open the work space in VS Code 
+
+Navigate to ROS folder
+
+
+    cd UR3e_unity/ROS/
+ 
     
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
+Open the workspace in VS Code
 
 
-This means that we must first create the environment in which our program will run. We already have a ready-made environment and we just need to building it:
+    ~/UR3e_unity/ROS$ code .
 
-    sudo ./build_docker.sh
-
-Next will begin the process of building. If the process ends incorrectly or with an error, you must start building again.
-
-But if you can't end the process correctly even after several uploads, open the Dockerfile with a text editor and comment out lines 59 and 61.
 
 ### 4. Run Docker
 
