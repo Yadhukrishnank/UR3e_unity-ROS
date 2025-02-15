@@ -1,6 +1,6 @@
 # Description
 
-This is the ros side repository that allows you to operate a ur3e robot with robotiq gripper 2f-85. Make sure the ROS work space is set up before running unity.
+This is the ROS side repository that allows you to operate a ur3e robot with robotiq gripper 2f-85. Make sure the ROS work space is set up before running unity.
 
 ------
 
