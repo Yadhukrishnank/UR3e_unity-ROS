@@ -40,5 +40,5 @@ To run the pick and place nodes run the following command
 
     rosrun ur_robotiq mover.py
 ------
-Ros side is setup is finished 
+Ros side setup is finished.
  
