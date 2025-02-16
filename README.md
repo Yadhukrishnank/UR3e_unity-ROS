@@ -35,11 +35,11 @@ Open a remote window from the bottom left corner and Select "Reopen in container
     catkin_make
     source devel/setup.bash
 Ensure that roscore is running.
-To launch the ROS-TCP connector and moveit launch file enter the following commands
+To launch the ROS-TCP connector and moveit launch file, enter the following commands
 
     roslaunch ur_robotiq pose_est.launch
 
-Open an another terminal
+Open an another terminal.
 To run the pick and place nodes run the following command
 
     rosrun ur_robotiq mover.py
