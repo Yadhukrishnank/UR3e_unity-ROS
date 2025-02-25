@@ -45,5 +45,4 @@ To run the pick and place nodes run the following command
     rosrun ur_robotiq mover.py
 ------
 Ros side setup is finished.
-For Unity side setup follow the link "https://github.com/Rohithramkrish11/UR3e-Unity-WS.git"
- 
+For Unity side setup follow the [link](https://github.com/Rohithramkrish11/UR3e-Unity-WS.git). 
