@@ -51,3 +51,4 @@ For ROS2 setup follow the [Link](https://github.com/Yadhukrishnank/ur3e.git).
 
 ------
 Follow the [link](https://www.linkedin.com/posts/yadhu--k_robotics-augmentedreality-automation-activity-7297351695641042945-z-uY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC39nR0BLYzGvcNugtscMUJ05hJd5ob5Fp0) for demo video.
+Final report [[Final Report Rohith Ramakrishnan, Yadhu Krishnan.pdf](https://github.com/user-attachments/files/21532552/Final.Report.Rohith.Ramakrishnan.Yadhu.Krishnan.pdf)]
